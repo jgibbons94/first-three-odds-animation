@@ -48,8 +48,8 @@
 #equation{
 	animation-name: equation;
 	position: relative;
-	top:-.65em;
-	left: 3em;
+	top:-.53em;
+	left: 3.5em;
 }
 .step{
 	position: absolute;
@@ -128,12 +128,12 @@ fade 99%
 	69%
 	{
 		left: 0em;
-		top: 1.25em;
+		top: 1.1em;
 	}
 	100%
 	{
 		left: 0em;
-		top: 1.25em;
+		top: 1.1em;
 	}
 }
 
@@ -209,8 +209,8 @@ fade 99%
 	/*divide*/
 	59%
 	{
-		left:-3.75em;
-		top: 1.25em;
+		left:-3.6em;
+		top: 1.1em;
 	}
 	/*reciprocate*/
 	69%
@@ -219,7 +219,7 @@ fade 99%
 	}
 	100%
 	{
-		left: -3.75em;
+		left: -3.6em;
 		top: 0em;
 	}
 	
