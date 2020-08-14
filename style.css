@@ -1,0 +1,485 @@
+#animation *{
+/*
+	animation-duration: 30s;
+	*/
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	font-size:50pt
+}
+#fraction{
+	position:relative;
+	animation-name: fraction;
+}
+#one-one-three{
+	animation-name: one-one-three;
+	position:relative;
+}
+#one{
+	animation-name: one;
+}
+#one-clone{
+	animation-name: one-clone;
+}
+#three{
+	animation-name: three;
+}
+#three-five-five{
+	animation-name: three-five-five;
+	position:relative;
+}
+#three-clone{
+	animation-name: three-clone;
+}
+#five{
+	animation-name: five;
+}
+#five-clone{
+	animation-name: five-clone;
+}
+#bar{
+	background-color: black;
+	width:3em;
+	height:2px;
+	animation-name: bar;
+}
+#equation{
+	animation-name: equation;
+	position: relative;
+	top:-.65em;
+	left: 3em;
+}
+.step{
+	position: absolute;
+	left:0
+	top: 4em;
+}
+#step1{
+	animation-name:step1;
+}
+#step2{
+	animation-name:step2;
+}
+#step3{
+	animation-name:step3;
+}
+#step4{
+	animation-name:step4;
+}
+#step5{
+	animation-name:step5;
+}
+#step6{
+	animation-name:step6;
+}
+#step7{
+	animation-name:step7;
+}
+
+/*
+start 0%
+first 0-10%
+three 10-20%
+odds 20-30%
+double 30-40%
+halve 40-50%
+divide 50-60%
+recipricate 60-70%
+equals 70-99%
+fade 99%
+*/
+@keyframes fraction {
+	/*
+	Stay put until equals
+	Then shift left.
+	*/
+	
+	0% {
+		top: 0px;
+		left: 40px;
+	}
+	
+	70%{
+		top: 0px;
+		left: 40px;
+	}
+	80%{
+		top: 0px;
+		left: 0px;	
+	}
+}
+
+@keyframes one-one-three
+{
+	0%
+	{
+	top: 0em;
+	left: 0em;
+	}
+	/*divide*/
+	59%
+	{
+		left: 0em;
+		top: 0em;
+	}
+	/*reciprocate*/
+	69%
+	{
+		left: 0em;
+		top: 1.25em;
+	}
+	100%
+	{
+		left: 0em;
+		top: 1.25em;
+	}
+}
+
+@keyframes one
+{
+	0%
+	{
+		opacity: 0;
+	}
+	10%
+	{
+		opacity:1;
+	}
+}
+
+@keyframes one-clone
+{
+	0%
+	{
+		opacity: 0;
+	}
+	30%
+	{
+		opacity: 0;
+	}
+	40%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes three
+{
+	0%
+	{
+		opacity: 0;
+	}
+	10%
+	{
+		opacity: 0;
+	}
+	20%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes three-five-five
+{
+	0%
+	{
+		top: 0em;
+		left:0em;
+	}
+	/*halve*/
+	40%
+	{
+		top:0em;
+		left: 0em;
+	}
+	49%
+	{
+		top: 0em;
+		left: 2em;
+	}
+	/*divide*/
+	59%
+	{
+		left:-3.75em;
+		top: 1.25em;
+	}
+	/*reciprocate*/
+	69%
+	{
+		top: 0em;
+	}
+	100%
+	{
+		left: -3.75em;
+		top: 0em;
+	}
+	
+}
+
+@keyframes three-clone
+{
+	0%
+	{
+		opacity: 0;
+	}
+	30%
+	{
+		opacity: 0;
+	}
+	40%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes five
+{
+	0%
+	{
+		opacity: 0;
+	}
+	20%
+	{
+		opacity: 0;
+	}
+	30%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes five-clone
+{
+	0%
+	{
+		opacity: 0;
+	}
+	30%
+	{
+		opacity: 0;
+	}
+	40%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes equation
+{
+	0%
+	{
+		opacity:0;
+	}
+	70%
+	{
+		opacity:0;
+	}
+	80%
+	{
+		opacity:1;
+	}
+}
+@keyframes bar {
+	from { opacity:0; }
+	/*
+	divide
+        */
+   50% { opacity:0; }
+   60% { opacity:1; }
+	to { opacity:1; }
+}
+/*
+first
+*/
+@keyframes step1
+{
+	0%
+	{
+		opacity: 1;
+	}
+	9%
+	{
+		opacity: 1;
+   }
+	10%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:0;
+	}
+}
+/*
+three
+*/
+@keyframes step2{
+	0%
+	{
+		opacity: 0;
+	}
+	9%
+	{
+		opacity:0;
+	}
+	10%
+	{
+		opacity:1;
+	}
+	19%
+	{
+		opacity:1;
+	}
+	20%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:0;
+	}
+}
+/*
+odds
+*/
+@keyframes step3{
+	0%
+	{
+		opacity: 0;
+	}
+	19%
+	{
+		opacity:0;
+	}
+	20%
+	{
+		opacity:1;
+	}
+	29%
+	{
+		opacity:1;
+	}
+	30%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:0;
+	}
+}
+/*
+double
+*/
+@keyframes step4{
+	0%
+	{
+		opacity: 0;
+	}
+	29%
+	{
+		opacity:0;
+	}
+	30%
+	{
+		opacity:1;
+	}
+	39%
+	{
+		opacity:1;
+	}
+	40%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:0;
+	}
+}
+/*
+halve
+*/
+@keyframes step5{
+	0%
+	{
+		opacity: 0;
+	}
+	39%
+	{
+		opacity:0;
+	}
+	40%
+	{
+		opacity:1;
+	}
+	49%
+	{
+		opacity:1;
+	}
+	50%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:0;
+	}
+}
+/*
+divide
+*/
+@keyframes step6{
+	0%
+	{
+		opacity: 0;
+	}
+	49%
+	{
+		opacity:0;
+	}
+	50%
+	{
+		opacity:1;
+	}
+	59%
+	{
+		opacity:1;
+	}
+	60%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:0;
+	}
+}
+/*
+reciprocate
+*/
+@keyframes step7{
+	0%
+	{
+		opacity: 0;
+	}
+	59%
+	{
+		opacity:0;
+	}
+	60%
+	{
+		opacity:1;
+	}
+	69%
+	{
+		opacity:1;
+	}
+	70%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:0;
+	}
+}
