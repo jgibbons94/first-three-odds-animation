@@ -19,6 +19,7 @@
 }
 #one-clone{
 	animation-name: one-clone;
+	position:relative;
 }
 #three{
 	animation-name: three;
@@ -29,12 +30,14 @@
 }
 #three-clone{
 	animation-name: three-clone;
+	position:relative;
 }
 #five{
 	animation-name: five;
 }
 #five-clone{
 	animation-name: five-clone;
+	position:relative;
 }
 #bar{
 	background-color: black;
@@ -151,14 +154,21 @@ fade 99%
 	0%
 	{
 		opacity: 0;
+		left: -1.2em;
+	}
+	29%
+	{
+		opacity:0;
 	}
 	30%
 	{
-		opacity: 0;
+		opacity: 1;
+		left: -1.2em;
 	}
 	40%
 	{
 		opacity: 1;
+		left:0em;
 	}
 }
 
@@ -220,14 +230,21 @@ fade 99%
 	0%
 	{
 		opacity: 0;
+		left: -1.2em;
+	}
+	29%
+	{
+		opacity: 0;
 	}
 	30%
 	{
-		opacity: 0;
+		opacity: 1;
+		left: -1.2em;
 	}
 	40%
 	{
 		opacity: 1;
+		left: 0em;
 	}
 }
 
@@ -252,14 +269,21 @@ fade 99%
 	0%
 	{
 		opacity: 0;
+		left: -1.2em;
+	}
+	29%
+	{
+		opacity:0;
 	}
 	30%
 	{
-		opacity: 0;
+		opacity: 1;
+		left: -1.2em;
 	}
 	40%
 	{
 		opacity: 1;
+		left: 0em;
 	}
 }
 
