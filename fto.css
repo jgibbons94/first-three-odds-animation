@@ -3,7 +3,7 @@
 	src: url(web/woff/JetBrainsMono-Regular.woff);
 }
 #animation *{
-	font-family jb;
+	font-family: jb;
 /*
 	animation-duration: 30s;
 	*/
