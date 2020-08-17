@@ -1,10 +1,15 @@
 #animation *{
+	font-family jb;
 /*
 	animation-duration: 30s;
 	*/
 	animation-duration: 30s;
 	animation-iteration-count: infinite;
-	font-size:50pt
+	font-size:50pt;
+}
+@font-face {
+	font-family: jb;
+	src: url(web/woff/JetBrainsMono-Regular.woff);
 }
 #fraction{
 	position:relative;
