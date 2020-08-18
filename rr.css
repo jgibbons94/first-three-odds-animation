@@ -1,0 +1,84 @@
+@font-face {
+	font-family: jb;
+	src: url(web/woff/JetBrainsMono-Regular.woff)
+}
+#animation, #animation *
+{
+	font-family: jb;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	font-size: 50pt;
+}
+.readily, .reality
+{
+	display: inline-block;
+}
+.readily
+{
+	animation-name: readily;
+}
+.reality
+{
+	position: absolute; animation-name: reality;
+}
+#reality-l
+{
+	left: 2em;
+}
+#reality-t
+{
+	left: 3.1em;
+}
+/*
+ * 0%-25% "readily"
+ * 25%-50% transition
+ * 50%-75% "reality"
+ * 75%-100% transition
+ */
+@keyframes readily{
+	0%{
+		transform: rotateY(0Deg);
+		opacity: 1;
+	}
+
+	25%{
+		transform: rotateY(0Deg);
+		opacity: 1;
+	}
+	50%{
+		transform: rotateY(90Deg);
+		opacity: 0;
+	}
+	75%{
+		transform: rotateY(90Deg);
+		opacity: 0;
+	}
+	100%{
+		transform: rotateY(0Deg);
+		opacity:1;
+	}
+}
+@keyframes reality
+{
+	0%{
+		transform: rotateY(-90Deg);
+		opacity:0;
+	}
+
+	25%{
+		transform: rotateY(-90Deg);
+		opacity: 0;
+	}
+	50%{
+		transform: rotateY(0Deg);
+		opacity: 1;
+	}
+	75%{
+		transform: rotateY(0Deg);
+		opacity: 1;
+	}
+	100%{
+		transform: rotateY(-90Deg);
+		opacity: 0;
+	}
+}
